@@ -1,0 +1,7 @@
+# for tier 1 (run separately)
+aws ec2 run-instances --image-id ami-0c0b9a5fa07b89cf7 --instance-type t3.micro --key-name  nginxserver-kp --security-group-ids sg-01ce2395a89767248 --placement AvailabilityZone=eu-west-1a
+aws ec2 run-instances --image-id ami-0c0b9a5fa07b89cf7 --instance-type t3.micro --key-name  nginxserver-kp --security-group-ids sg-01ce2395a89767248 --placement AvailabilityZone=eu-west-1b
+
+# for tier 2 (run separately)
+aws ec2 run-instances --image-id ami-0bd8f76b2da6f7f02 --instance-type t3.micro --key-name  nginxserver-kp --security-group-ids sg-01ce2395a89767248 --placement AvailabilityZone=eu-west-1a
+aws ec2 run-instances --image-id ami-0bd8f76b2da6f7f02 --instance-type t3.micro --key-name  nginxserver-kp --security-group-ids sg-01ce2395a89767248 --placement AvailabilityZone=eu-west-1b
